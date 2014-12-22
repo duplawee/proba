@@ -1,0 +1,83 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.studentnotenewestversion.MainActivity" >
+
+    <item
+        android:id="@+id/deviceaccess"
+        android:icon="@drawable/deviceaccessstorage"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/all"
+                android:title="All"/>
+            <item
+                android:id="@+id/home"
+                android:title="Home"/>
+            <item
+                android:id="@+id/work"
+                android:title="Work"/>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/abc_ic_search"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="always">
+    </item>
+    <item
+        android:id="@+id/add"
+        android:icon="@drawable/avaddtoqueue"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/image"
+                android:title="Image"/>
+            <item
+                android:id="@+id/text"
+                android:title="Text"/>
+            <item
+                android:id="@+id/voice"
+                android:title="Voice"/>
+            <item
+                android:id="@+id/video"
+                android:title="Video"/>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/dots"
+        android:icon="@drawable/owerflowiconhdpi"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="always">
+        <menu>
+
+            <!--
+            <item
+                android:id="@+id/pushn"
+                android:title="Pushnotification On/Off"/>
+            <item
+                android:id="@+id/synch"
+                android:title="Synchronize"/>
+            -->
+            <item
+                android:id="@+id/moore_apps"
+                android:title="Moore apps"/>
+            <item
+                android:id="@+id/contact_us"
+                android:title="Contact us"/>
+            <item
+                android:id="@+id/about_us"
+                android:title="About us"/>
+            <item
+                android:id="@+id/sign_out"
+                android:title="Sign Out"/>
+        </menu>
+    </item>
+
+</menu>

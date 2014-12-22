@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="background_color">#343434</color>
+    <color name="blue_color_light">#3E9DBA</color>
+    <color name="blue_color_dark">#3292b5</color>
+    <color name="gray_color">#cdcdcd</color>
+    <color name="dark_gray">#2d2c2c</color>
+    <color name="light_gray_for_divider">#3e3e3e</color>
+    <color name="dark_gray_for_divider">#262626</color>
+    
+    <color name="blue_button">#38d7ff</color>
+    <color name="blue_button_pressed">#2aa1bf</color>
+    <color name="text_field_color">#fed17a</color>
+
+</resources>

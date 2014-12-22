@@ -1,0 +1,64 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+
+    <style name="MyActionBarTabTextStyle" parent="@android:style/Widget.Holo.Light.Tab">
+        <item name="android:textSize">14sp</item>
+        <item name="android:padding">0dp</item>
+        
+    </style>
+
+    <style name="GenericProgressIndicator" parent="@android:style/Widget.ProgressBar.Large">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:indeterminate">true</item>
+    </style>
+
+    <!-- spinner -->
+
+    <style name="SpinnerAppTheme" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/apptheme_spinner_background_holo_dark</item>
+        <item name="android:spinnerMode">dropdown</item>
+        <item name="android:dropDownSelector">@android:color/white</item>
+    </style>
+
+    <!--
+          <style name="SpinnerDropDownItemAppTheme" parent="android:Widget.DropDownItem.Spinner">
+        <item name="android:checkMark">@drawable/apptheme_btn_radio_holo_dark</item>
+        <item name="android:textColor">@color/dark_gray_for_divider</item>    </style>
+    -->
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <item name="android:spinnerStyle">@style/SpinnerAppTheme</item>
+        <item name="android:editTextStyle">@style/EditTextAppTheme</item>
+        <!-- <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItemAppTheme</item> -->
+    </style>
+
+    <!-- edittext -->
+    <style name="EditTextAppTheme" parent="android:Widget.EditText">
+        <item name="android:background">@drawable/apptheme_edit_text_holo_dark</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <!-- animation for dialog -->
+    <style name="AlertDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/animation_slide_down</item>
+        <item name="android:windowExitAnimation">@anim/animation_slide_up</item>
+    </style>
+
+</resources>

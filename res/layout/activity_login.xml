@@ -1,0 +1,139 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/background_color"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:weightSum="9" >
+
+    <ImageView
+        android:id="@+id/login_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/large_margin"
+        android:layout_weight="3"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/app_logo_new" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:gravity="top"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/large_margin"
+            android:layout_marginTop="@dimen/large_margin"
+            android:gravity="center_horizontal"
+            android:text="Welcome to StudentNote!"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/edittext_size" />
+
+        <EditText
+            android:id="@+id/userName_Login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginLeft="@dimen/button_padding"
+            android:layout_marginRight="@dimen/button_padding"
+            android:background="@color/text_field_color"
+            android:ems="10"
+            android:gravity="left|center_vertical"
+            android:hint="@string/enter_your_username"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="@dimen/small_margin"
+            android:textColor="@color/background_color"
+            android:textSize="@dimen/edittext_size" />
+
+        <EditText
+            android:id="@+id/password_Login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginBottom="@dimen/large_margin"
+            android:layout_marginLeft="@dimen/button_padding"
+            android:layout_marginRight="@dimen/button_padding"
+            android:layout_marginTop="@dimen/small_margin"
+            android:background="@color/text_field_color"
+            android:ems="10"
+            android:gravity="left|center_vertical"
+            android:hint="@string/enter_your_password"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/small_margin"
+            android:textColor="@color/background_color"
+            android:textSize="@dimen/edittext_size" />
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginLeft="@dimen/button_padding"
+            android:layout_marginRight="@dimen/button_padding"
+            android:layout_marginTop="@dimen/large_margin"
+            android:background="@drawable/blue_button_selector"
+            android:onClick="onClick"
+            android:text="@string/log_in"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/edittext_size" />
+
+        <!--
+        <Button
+            android:id="@+id/fb_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginLeft="@dimen/button_padding"
+            android:layout_marginRight="@dimen/button_padding"
+            android:layout_marginTop="@dimen/small_margin"
+            android:background="@drawable/blue_button_selector"
+            android:onClick="onClick"
+            android:text="@string/fb_login"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/edittext_size" />
+
+     
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <com.facebook.widget.LoginButton
+                android:id="@+id/fb_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClick" />
+        </FrameLayout>
+        -->
+
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginLeft="@dimen/button_padding"
+            android:layout_marginRight="@dimen/button_padding"
+            android:layout_marginTop="@dimen/small_margin"
+            android:background="@drawable/blue_button_selector"
+            android:onClick="onClick"
+            android:text="@string/register"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/edittext_size" />
+
+        <!--
+             <Button
+            android:id="@+id/forgot_password_Login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginLeft="@dimen/button_padding"
+            android:layout_marginRight="@dimen/button_padding"
+            android:layout_marginTop="@dimen/small_margin"
+            android:background="@drawable/transparent_button_selector"
+            android:onClick="onClick"
+            android:text="@string/forgot_password_login"
+            android:textColor="@color/blue_color_light"
+            android:textSize="@dimen/edittext_small_size" />
+        -->
+    </LinearLayout>
+
+</LinearLayout>
